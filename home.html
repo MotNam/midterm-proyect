@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+    />
     
     
 </head>
 <body>
 <header>
         <div class="header">
-            <div class="logo"><img src="project-assets/logos/circle.svg" alt="circle-logo"></div>
+            <div class="logo"><img src="project-assets/logos/circle.svg" alt="circle-logo">
+            </div>
             <div class= "menu">
                 <nav class= "nav">
                     <a href="home.html">Home</a>
@@ -21,12 +26,13 @@
                 </nav>
            </div>
            <div class="contact-button">  <button class="button"><a href="contact.html">Contact us</a></button></div>
-          
+           <div class="material-icons burgerMenuShow">menu</div>
         </div>
 </header>
 <!-- MAIN SECTIION -->
 <main>
     <section>
+<!--Hero Section-->
         <div class="hero-section">
             <div class="hero-container">
                 <div class="content">
@@ -56,15 +62,18 @@
             </div>
         </div>
     </section>
-    <section class="client-section">
+    <!--Client Section-->
+
+     <section class="client-section">
         <div class="container">
             <div id="img-client"><img src="project-assets/logos/airbnb-logo.svg" alt="airbnb-logo" ></div>
             <div id="img-client"><img src="project-assets/logos/amazon-logo.svg" alt="amazon-logo" ></div>
             <div id="img-client"><img src="project-assets/logos/fedex-logo.svg" alt="fedex-logo" ></div>
             <div id="img-client"><img src="project-assets/logos/google-logo.svg" alt="google-logo" ></div>
-            <div id="img-client"><img src="project-assets/logos/microsoft-logo.svg" alt="microsoft-logodsi" ></div>
+            <div id="img-client"><img id="microsoft-icon" src="project-assets/logos/microsoft-logo.svg" alt="microsoft-logodsi" ></div>
         </div>
-    </section>
+    </section> 
+
     <section class="projects">
         <h1>Recent Projects</h1>  
         <div class="projectCards">
@@ -163,26 +172,7 @@
                 <a href="">Learn more</a>
             </div>
         </div>
-            <!-- <div class="container">
-                <div class="services">
-                    <img src="project-assets/services-section/icons/1.svg" alt="logo">
-                    <p class="mini-title">User Interface Design</p>
-                    <p>Circle provides you with a <br>stunning user interface design <br>that is accessible to everyone.</p>
-                    <a href="">Learn more</a>
-                </div>
-                <div class="services">
-                    <img src="project-assets/services-section/icons/2.svg" alt="logo">
-                    <p class="mini-title">User Experience Design</p>
-                    <p>Circle always focuses on <br>delivering the best user <br>experience to your customers.</p>
-                    <a href="">Learn more</a>
-                </div>
-                <div class="services">
-                    <img src="project-assets/services-section/icons/3.svg" alt="logo">
-                    <p class="mini-title">Application Development</p>
-                    <p>We develop high-quality mobile<br>  and web applications using the <br> latest technology stack.</p>
-                    <a href="">Learn more</a>
-                </div>
-            </div>   -->
+            
     </section>
     
     <section class="cta-section">
@@ -205,7 +195,7 @@
 </main>
 
     
-<footer class="footer"> 
+ <footer class="footer">  
          <div class="footer-left"><div class="logo"><img src="project-assets/logos/circle.svg" alt="circle-logo"></div>
         <div><p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p></div>
     </div>
@@ -221,7 +211,7 @@
                 <a href="#">Privacy Policy</a>
             </div>
         </div>   
-</footer> 
+</footer>  
         
 
     <script src="index.js"></script>

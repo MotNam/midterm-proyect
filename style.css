@@ -18,7 +18,7 @@ h1{
     color: #292E47;
 }
 
-
+/*header section*/
 .header { 
     width: 100%;
     display: flex;
@@ -27,12 +27,15 @@ h1{
     margin-bottom: 50px;
   }
   .logo { 
-    height: auto;
-    width: 8%;
-    display: flex;
-    margin-top: 10px;
-    
+    width: 120px;
+    height: 24px;
+    margin-top: 25px;
   }
+
+  .burgerMenuShow{
+      display:none !important;
+  }
+
  .logo img {
 width:100%;
  }
@@ -98,22 +101,20 @@ width:100%;
 }
 
 .hero-container {
-
-    width: 93%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height:auto;
     margin-top: 30px;
-    
 }
-.hero-container .content {
+.content{
     display: block;
     padding: 52px 20px 0px 200px;
     width: 75%;
 }
 
 .main-title h1 {
-    line-height: 70px;
+    
     font-size: 70px;
     font-weight: bold;
 }
@@ -174,16 +175,18 @@ width:100%;
 }
  .hero-img #card-two  {
     position: absolute;
-    bottom: -230px;
-    right: -110px;
-    width: 44%;
+    bottom: -110px;
+    right: -60px;
+    width: 48%;
 }
 /*clients*/
 .client-section .container{
     display: flex;
-    justify-content: space-between;
-    margin: 110px 0px;
-    padding: 250px 40px 30px 150px;
+    justify-items: center;
+    align-items: center;
+    margin: 90px 0px;
+    /* margin: 110px 0px; */
+    /* padding: 250px 40px 30px 150px; */
 }
 
 .client-section #img-client {
@@ -191,20 +194,20 @@ width:100%;
 }
 
 /*Projects*/
-/* .projects-section .container {
+.projects-section .container { 
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 30px 10%;
 }
 
-.cards-wrapper {
+.cards-wrapper { 
     display: flex;
     flex-direction: row;
     width: 100%;
     padding: 30px 0%;
     
-}
+} 
 
 .projects {
     display: flex;
@@ -222,11 +225,11 @@ width:100%;
     height: 50%;
     padding-bottom: 100px;
     
-   } */
-.projects{
+   } 
+/* .projects{
     margin: 100px 0px;
     padding-top: 40px;
-}
+} */
 
 .projects h1{
     font-size: 30px;
@@ -748,4 +751,193 @@ form input[type=submit] {
     box-sizing: border-box;
     resize: none;
   }
+
+/*MOBILE RESPONSIVENESS*/
+
+@media (max-width: 415px) { 
+body {
+    padding: 0;
+}
+/*header*/
+ header{
+    padding: 0px 10px; 
+ }
+ .header{
+    margin-bottom: 10px;
+ }   
+.menu { 
+    display: none;
+  }
+.header{
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.contact-button{
+    display: none;
+}
+.burgerMenuShow{
+    display: inline-block !important ;
+}
+.logo { 
+    width: 64px;
+    margin-top: 0px;
+  }
+
+  /*hero-section*/
+
+.hero-container {
+   padding: 0px;
+   flex-direction: column;
+   margin-top: 0px;
+}
+.content{
+    padding: 0px;
+    width: 100%;
+}
+.main-title h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+.main-title p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 24px;
+}
+
+.bottom-part{
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.bottom-part button a{
+    font-size: 15px;
+}
+
+.bottom-part a{
+    font-size: 15px;
+}  
+
+.hero-img {
+    width: 100%;
+    height: 0px;
+    margin-top: 10px;    
+}
+
+.hero-img #guy{
+    width: 100%;
+}
+.hero-img #card-one, .hero-img #card-two  {
+      display: none;
+  }
+
+
+  /*clients-section*/
+  .client-section .container{  
+      flex-direction: column;
+      width: 100%;  
+      margin: 450px 140px;
+}
+
+.client-section #microsoft-icon{
+    display: none;
+}
+
+.projects {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    justify-content: space-evenly;
+    margin: 250px 140px;
+}
+
+.projects h1{
+    font-size: 30px;
+    margin-top: 190px;
+    padding-left: 30px;
+    width:100%;
+}
+
+.projectCards{
+    flex-direction: column;
+    width: 100%;
+}
+
+/*Testimonials*/
+
+.testimonial-section .container{
+    padding: 10px 90px;
+    width: 100%;
+    margin: 25px;
+}
+.memojis-top img, .memojis-bottom img{ 
+    display: none;
+}
+
+#cl-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* line-height: 20px; */
+    padding: 0px 30px;
+    justify-content: center;
+}
+
+#cl-name {
+   width: 100%;
+    line-height: 0px;
+    padding-top: 45px; 
+}
+
+.subtitle {
+    padding-top: 50px;
+    text-align: center;
+}
+.subtitle h2{
+    font-size: 30px;
+}
+
+
+/*Services*/
+
+
+.services-section{
+    margin: 80px 20px;
+    padding: 0px; 
+    height: 0px;
+    width: 100%;
+}
+
+.service-card-wrapper {
+
+    padding-top: 50px;
+    flex-direction: column;
+}
+.service-card {
+    background-color: white;
+    max-width: 100%;
+    padding: 25px 25px;
+}
+/*CTA Section*/
+
+/*footer*/
+
+.footer {
+    
+   
+}
+.footer #links {
+    display: flex;
+
+   /* padding: 25px 25px 50px 50px;*/
+
+  }
+
+}
+
+
 
