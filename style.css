@@ -434,8 +434,8 @@ width:100%;
 .service-card {
     background-color: white;
     width: 25%;
-    padding: 40px;
-    height: 426px;
+    padding: 20px;
+    height: 456px;
 
 }
 .icon-container{
@@ -460,7 +460,7 @@ width:100%;
     display: flex;
     justify-content: space-between;
     height:400px;
-    padding: 50px 30px;
+    padding: 70px 30px;
 }
 .service-card a{
     text-decoration: none;
@@ -1012,8 +1012,9 @@ main {
     flex-direction: column;
     padding-top: 50px;
     margin: 0;
-    position: relative;
+    height: 1380px;
 }
+
 .services-section h3{
     font-size: 28px;
     padding-bottom: 25px;
@@ -1022,7 +1023,7 @@ main {
 .service-card-wrapper {
   flex-direction: column;
   padding: 0;
-  height:auto;
+  
 }
 .service-card {
     width: 89%;
@@ -1047,9 +1048,7 @@ main {
 
 /*MOBILE-CTA Section*/
 
-.cta-section{
-    position: relative;
-}
+    
 .cta-section .container {
     margin: 0;
     height: 395px; 
@@ -1072,15 +1071,30 @@ main {
     padding: 0;
     flex-direction:column;
 }
+
+.email-space {
+    width: 100%;
+    padding: 0;
+}
+
 .cta-section #email {
-    height: 75px;
+    height: 65px;
+    width: 45%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+    /* height: 75px;
     width: 0%;
     font-size: 16px;
-    text-align: center;
+    text-align: center; */
     /* height: 70px;
     width: 76%;
     font-size: 16px;
     text-align: center; */
+}
+.cta-section form input [type=email] {
+    font-size: 14px;
+    text-align: center;
 }
 
 .labels-wrapper #submit{
@@ -1098,33 +1112,52 @@ main {
     width: 94%;
     margin-top: 10px;
 }
+.submit-space{
+    width: 149%;
+}
 
 
 /*MOBILE-footer*/
 
 .footer {
-    padding: 80px 26%;
     display: block;
-    position: relative;
-
+    padding: 0;
+    margin-top: 85px;
 }
+
 .footer #links {
   display: flex;
-  padding: 0;
+  padding-left: 15%;
+  margin: 0;
 
 }
 .footer #links a {
     font-size: 16px;
 }
 
-.footer .top-row, .bottom-row{
+.footer .top-row{
     padding: 19px 0;
+}
+
+.footer .bottom-row{
+    padding: 19px 0;
+}
+.top-row a, .bottom-row a{
+    padding: 0;
 }
 
  .bottom-row a{
     font-size: 20px;
 }
-
+.footer .logo{
+    display: flex;
+    height: auto;
+    width: 32%;
+    padding-left: 15%;
+}
+.footer p{
+    padding-left: 15%;
+}
 }
 
 
