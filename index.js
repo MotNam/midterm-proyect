@@ -1,7 +1,7 @@
 console.log("Hello");
 
 async function getPosts() {
-    const res = await fetch ("http://localhost:3000/posts");
+    const res = await fetch("http://localhost:3000/posts");
     const finalRes = await res.json();
     console.log(finalRes);
     showPosts(finalRes);

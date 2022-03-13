@@ -42,7 +42,7 @@
                     </div>
                     <div class="bottom-part">
                         <div class="bottom-part-link">
-                            <a>See our work</a>
+                            <a href="projects.html">See our work</a>
                         </div>
                         <div class="bottom-part-get-touch">
                             <button><a href="contact.html">Get in touch</a>
@@ -69,11 +69,15 @@
 
      <section class="client-section">
         <div class="container">
-            <div id="img-client"><img src="project-assets/logos/airbnb-logo.svg" alt="airbnb-logo" ></div>
-            <div id="img-client"><img src="project-assets/logos/amazon-logo.svg" alt="amazon-logo" ></div>
-            <div id="img-client"><img src="project-assets/logos/fedex-logo.svg" alt="fedex-logo" ></div>
-            <div id="img-client"><img src="project-assets/logos/google-logo.svg" alt="google-logo" ></div>
-            <div id="img-client"><img id="microsoft-icon" src="project-assets/logos/microsoft-logo.svg" alt="microsoft-logodsi" ></div>
+            <div id="img-client"><img class="gray" src="project-assets/logos/airbnb-logo.svg" alt="airbnb-logo" ></div>
+            <div id="img-client"><img 
+                class="gray" src="project-assets/logos/amazon-logo.svg" alt="amazon-logo" ></div>
+            <div id="img-client"><img 
+                class="gray" src="project-assets/logos/fedex-logo.svg" alt="fedex-logo" ></div>
+            <div id="img-client"><img 
+                class="gray" src="project-assets/logos/google-logo.svg" alt="google-logo" ></div>
+            <div id="img-client"><img class="gray" 
+                id="microsoft-icon" src="project-assets/logos/microsoft-logo.svg" alt="microsoft-logodsi" ></div>
         </div>
     </section> 
 
@@ -82,7 +86,7 @@
         <h1>Recent Projects</h1>  
         <div class="projectCards">
            
-            
+        <!--Cards loaded from localhost by Javascript  -->
     
         </div>
     </section>
@@ -109,7 +113,8 @@
         </div>  
     </section>
    
-           <section class="services-section">
+    <!-- Services Section -->
+        <section class="services-section">
         <h3>Our Services</h3>
         <div class="service-card-wrapper">
             <div class="service-card">
@@ -145,14 +150,25 @@
             
     </section>
     
-   
+   <!-- CTA Section -->
      
          <section class="cta-section">
-        <div class="container">
-            <div><h1>Do you have any questions?</h1>
-                <p>Let us help you!</p>
+       <div class="cta-container">
+            <h1>Do you have any questions?</h1>
+            <p>Let us help you!</p>
+        
+            <div class="cta-email">
+                <div class="email-logo"></div>
+                <input type="email" class="input-cta-email" placeholder="Enter your email" required
+                minlength="" maxlength="" size="">
+                <button class="cta-subscribe">
+                    <a class=" cta-button" href="contact.html">Subscribe</a>
+                </button>
             </div>
-                <form id="email">
+        </div>
+    </section> 
+
+<!--    <form id="email">
                 <div class="labels-wrapper">
                     <div class="email-space">
                     <input type="email" id="email" name="email" placeholder="Enter your email" required
@@ -163,12 +179,7 @@
                     <input type="submit" value="Subscribe">
                     </div>
                 </div>
-            </form>
-            
-        </div>
-    </section> 
-
-
+            </form> -->
    
    
 </main>
